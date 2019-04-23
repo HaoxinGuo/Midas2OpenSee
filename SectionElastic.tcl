@@ -1,292 +1,295 @@
-# 定义截面信息	截面面积代号	面积
-set A0  1.0E4
-set Iy0 1.0E8
-set Iz0 1.0E8
-set J0  2.0E8
+# 定义截面信息	截面面积代号		面积	
+# 定义截面信息	截面面积代号		面积	
+set A1 [expr 3.1416*$m2]
+set A2 [expr 67.24*$m2]
+set A3 [expr 13.7953*$m2]
+set A4 [expr 24.9*$m2]
+set A5 [expr 24.9*$m2]
+set A6 [expr 24.3122*$m2]
+set A7 [expr 12.1654*$m2]
+set A8 [expr 43.6921*$m2]
+set A9 [expr 28.9147*$m2]
+set A10 [expr 23.912*$m2]
+set A11 [expr 12.5714*$m2]
+set A12 [expr 14.5322*$m2]
+set A13 [expr 10.3177*$m2]
+set A14 [expr 10.396*$m2]
+set A15 [expr 12.5714*$m2]
+set A16 [expr 10.396*$m2]
+set A17 [expr 10.3177*$m2]
+set A18 [expr 10.3609*$m2]
+set A19 [expr 10.3892*$m2]
+set A20 [expr 10.3892*$m2]
+set A21 [expr 10.3609*$m2]
+set A22 [expr 10.3961*$m2]
+set A23 [expr 12.4041*$m2]
+set A24 [expr 11.8091*$m2]
+set A25 [expr 11.2141*$m2]
+set A26 [expr 10.6192*$m2]
+set A27 [expr 12.5714*$m2]
+set A28 [expr 14.5322*$m2]
+set A29 [expr 14.0994*$m2]
+set A30 [expr 13.6575*$m2]
+set A31 [expr 13.2065*$m2]
+set A32 [expr 12.7463*$m2]
+set A33 [expr 12.7463*$m2]
+set A34 [expr 13.2065*$m2]
+set A35 [expr 13.6575*$m2]
+set A36 [expr 14.0994*$m2]
+set A37 [expr 12.5714*$m2]
+set A38 [expr 10.3961*$m2]
+set A39 [expr 10.6192*$m2]
+set A40 [expr 11.2141*$m2]
+set A41 [expr 11.8091*$m2]
+set A42 [expr 12.4041*$m2]
+set A43 [expr 10.3177*$m2]
+set A44 [expr 10.3496*$m2]
+set A45 [expr 10.3742*$m2]
+set A46 [expr 10.3915*$m2]
+set A47 [expr 10.3961*$m2]
+set A48 [expr 10.3915*$m2]
+set A49 [expr 10.3742*$m2]
+set A50 [expr 10.3496*$m2]
+set A51 [expr 12.4041*$m2]
+set A52 [expr 11.8091*$m2]
+set A53 [expr 11.2141*$m2]
+set A54 [expr 10.6192*$m2]
+set A55 [expr 12.5714*$m2]
+set A56 [expr 14.5322*$m2]
+set A57 [expr 14.0994*$m2]
+set A58 [expr 13.6575*$m2]
+set A59 [expr 13.2065*$m2]
+set A60 [expr 12.7463*$m2]
+set A61 [expr 12.7463*$m2]
+set A62 [expr 13.2065*$m2]
+set A63 [expr 13.6575*$m2]
+set A64 [expr 14.0994*$m2]
+set A65 [expr 12.5714*$m2]
+set A66 [expr 10.3961*$m2]
+set A67 [expr 10.6192*$m2]
+set A68 [expr 11.2141*$m2]
+set A69 [expr 11.8091*$m2]
+set A70 [expr 12.4041*$m2]
+
+
+#   IXX 
+set J1 [expr 1.5708*$m4]
+set J2 [expr 641.362*$m4]
+set J3 [expr 16.235*$m4]
+set J4 [expr 57.7142*$m4]
+set J5 [expr 57.7142*$m4]
+set J6 [expr 31.8386*$m4]
+set J7 [expr 19.9158*$m4]
+set J8 [expr 204.675*$m4]
+set J9 [expr 81.3617*$m4]
+set J10 [expr 48.1829*$m4]
+set J11 [expr 35.7891*$m4]
+set J12 [expr 57.3592*$m4]
+set J13 [expr 15.617*$m4]
+set J14 [expr 22.9938*$m4]
+set J15 [expr 35.7891*$m4]
+set J16 [expr 22.9938*$m4]
+set J17 [expr 15.8226*$m4]
+set J18 [expr 19.0779*$m4]
+set J19 [expr 22.1921*$m4]
+set J20 [expr 22.1921*$m4]
+set J21 [expr 19.0779*$m4]
+set J22 [expr 23.3008*$m4]
+set J23 [expr 35.3145*$m4]
+set J24 [expr 31.5229*$m4]
+set J25 [expr 27.9199*$m4]
+set J26 [expr 24.5386*$m4]
+set J27 [expr 36.3732*$m4]
+set J28 [expr 58.3971*$m4]
+set J29 [expr 53.2032*$m4]
+set J30 [expr 48.151*$m4]
+set J31 [expr 43.1357*$m4]
+set J32 [expr 38.1799*$m4]
+set J33 [expr 38.1799*$m4]
+set J34 [expr 43.1357*$m4]
+set J35 [expr 48.151*$m4]
+set J36 [expr 53.2032*$m4]
+set J37 [expr 36.3732*$m4]
+set J38 [expr 23.3008*$m4]
+set J39 [expr 24.5386*$m4]
+set J40 [expr 27.9199*$m4]
+set J41 [expr 31.5229*$m4]
+set J42 [expr 35.3145*$m4]
+set J43 [expr 15.8226*$m4]
+set J44 [expr 18.1098*$m4]
+set J45 [expr 20.3617*$m4]
+set J46 [expr 22.5244*$m4]
+set J47 [expr 23.3008*$m4]
+set J48 [expr 22.5244*$m4]
+set J49 [expr 20.3617*$m4]
+set J50 [expr 18.1098*$m4]
+set J51 [expr 35.3145*$m4]
+set J52 [expr 31.5229*$m4]
+set J53 [expr 27.9199*$m4]
+set J54 [expr 24.5386*$m4]
+set J55 [expr 36.3732*$m4]
+set J56 [expr 58.3971*$m4]
+set J57 [expr 53.2032*$m4]
+set J58 [expr 48.151*$m4]
+set J59 [expr 43.1357*$m4]
+set J60 [expr 38.1799*$m4]
+set J61 [expr 38.1799*$m4]
+set J62 [expr 43.1357*$m4]
+set J63 [expr 48.151*$m4]
+set J64 [expr 53.2032*$m4]
+set J65 [expr 36.3732*$m4]
+set J66 [expr 23.3008*$m4]
+set J67 [expr 24.5386*$m4]
+set J68 [expr 27.9199*$m4]
+set J69 [expr 31.5229*$m4]
+set J70 [expr 35.3145*$m4]
+
+
+
+#   Iy 
+set Iy1 [expr 0.7854*$m4]
+set Iy2 [expr 376.768*$m4]
+set Iy3 [expr 48.5569*$m4]
+set Iy4 [expr 142.9468*$m4]
+set Iy5 [expr 142.9468*$m4]
+set Iy6 [expr 353.469*$m4]
+set Iy7 [expr 250.341*$m4]
+set Iy8 [expr 491.98*$m4]
+set Iy9 [expr 405.899*$m4]
+set Iy10 [expr 335.667*$m4]
+set Iy11 [expr 240.225*$m4]
+set Iy12 [expr 251.422*$m4]
+set Iy13 [expr 223.611*$m4]
+set Iy14 [expr 198.655*$m4]
+set Iy15 [expr 240.225*$m4]
+set Iy16 [expr 198.655*$m4]
+set Iy17 [expr 223.6116*$m4]
+set Iy18 [expr 213.3676*$m4]
+set Iy19 [expr 202.7358*$m4]
+set Iy20 [expr 202.7358*$m4]
+set Iy21 [expr 213.3676*$m4]
+set Iy22 [expr 198.6562*$m4]
+set Iy23 [expr 237.028*$m4]
+set Iy24 [expr 225.6586*$m4]
+set Iy25 [expr 214.2892*$m4]
+set Iy26 [expr 202.9197*$m4]
+set Iy27 [expr 240.2257*$m4]
+set Iy28 [expr 251.422*$m4]
+set Iy29 [expr 249.1795*$m4]
+set Iy30 [expr 246.7571*$m4]
+set Iy31 [expr 244.145*$m4]
+set Iy32 [expr 241.3334*$m4]
+set Iy33 [expr 241.3334*$m4]
+set Iy34 [expr 244.145*$m4]
+set Iy35 [expr 246.7571*$m4]
+set Iy36 [expr 249.1795*$m4]
+set Iy37 [expr 240.2257*$m4]
+set Iy38 [expr 198.6562*$m4]
+set Iy39 [expr 202.9197*$m4]
+set Iy40 [expr 214.2892*$m4]
+set Iy41 [expr 225.6586*$m4]
+set Iy42 [expr 237.028*$m4]
+set Iy43 [expr 223.6116*$m4]
+set Iy44 [expr 216.4449*$m4]
+set Iy45 [expr 209.0809*$m4]
+set Iy46 [expr 201.5321*$m4]
+set Iy47 [expr 198.6562*$m4]
+set Iy48 [expr 201.5321*$m4]
+set Iy49 [expr 209.0809*$m4]
+set Iy50 [expr 216.4449*$m4]
+set Iy51 [expr 237.028*$m4]
+set Iy52 [expr 225.6586*$m4]
+set Iy53 [expr 214.2892*$m4]
+set Iy54 [expr 202.9197*$m4]
+set Iy55 [expr 240.2257*$m4]
+set Iy56 [expr 251.422*$m4]
+set Iy57 [expr 249.1795*$m4]
+set Iy58 [expr 246.7571*$m4]
+set Iy59 [expr 244.145*$m4]
+set Iy60 [expr 241.3334*$m4]
+set Iy61 [expr 241.3334*$m4]
+set Iy62 [expr 244.145*$m4]
+set Iy63 [expr 246.7571*$m4]
+set Iy64 [expr 249.1795*$m4]
+set Iy65 [expr 240.2257*$m4]
+set Iy66 [expr 198.6562*$m4]
+set Iy67 [expr 202.9197*$m4]
+set Iy68 [expr 214.2892*$m4]
+set Iy69 [expr 225.6586*$m4]
+set Iy70 [expr 237.028*$m4]
 
 
 
 
-set	A1	3.1416
-set	A2	67.24
-set	A3	13.7953
-set	A4	24.9
-set	A5	24.9
-set	A6	24.3122
-set	A7	12.1654
-set	A8	43.6921
-set	A9	28.9147
-set	A10	23.912
-set	A11	12.5714
-set	A12	14.5322
-set	A13	10.3177
-set	A14	10.396
-set	A15	12.5714
-set	A16	10.396
-set	A17	10.3177
-set	A18	10.3609
-set	A19	10.3892
-set	A20	10.3892
-set	A21	10.3609
-set	A22	10.3961
-set	A23	12.4041
-set	A24	11.8091
-set	A25	11.2141
-set	A26	10.6192
-set	A27	12.5714
-set	A28	14.5322
-set	A29	14.0994
-set	A30	13.6575
-set	A31	13.2065
-set	A32	12.7463
-set	A33	12.7463
-set	A34	13.2065
-set	A35	13.6575
-set	A36	14.0994
-set	A37	12.5714
-set	A38	10.3961
-set	A39	10.6192
-set	A40	11.2141
-set	A41	11.8091
-set	A42	12.4041
-set	A43	10.3177
-set	A44	10.3496
-set	A45	10.3742
-set	A46	10.3915
-set	A47	10.3961
-set	A48	10.3915
-set	A49	10.3742
-set	A50	10.3496
-set	A51	12.4041
-set	A52	11.8091
-set	A53	11.2141
-set	A54	10.6192
-set	A55	12.5714
-set	A56	14.5322
-set	A57	14.0994
-set	A58	13.6575
-set	A59	13.2065
-set	A60	12.7463
-set	A61	12.7463
-set	A62	13.2065
-set	A63	13.6575
-set	A64	14.0994
-set	A65	12.5714
-set	A66	10.3961
-set	A67	10.6192
-set	A68	11.2141
-set	A69	11.8091
-set	A70	12.4041
-#		IXX
-set	J1	1.5708
-set	J2	641.362
-set	J3	16.235
-set	J4	57.7142
-set	J5	57.7142
-set	J6	31.8386
-set	J7	19.9158
-set	J8	204.675
-set	J9	81.3617
-set	J10	48.1829
-set	J11	35.7891
-set	J12	57.3592
-set	J13	15.617
-set	J14	22.9938
-set	J15	35.7891
-set	J16	22.9938
-set	J17	15.8226
-set	J18	19.0779
-set	J19	22.1921
-set	J20	22.1921
-set	J21	19.0779
-set	J22	23.3008
-set	J23	35.3145
-set	J24	31.5229
-set	J25	27.9199
-set	J26	24.5386
-set	J27	36.3732
-set	J28	58.3971
-set	J29	53.2032
-set	J30	48.151
-set	J31	43.1357
-set	J32	38.1799
-set	J33	38.1799
-set	J34	43.1357
-set	J35	48.151
-set	J36	53.2032
-set	J37	36.3732
-set	J38	23.3008
-set	J39	24.5386
-set	J40	27.9199
-set	J41	31.5229
-set	J42	35.3145
-set	J43	15.8226
-set	J44	18.1098
-set	J45	20.3617
-set	J46	22.5244
-set	J47	23.3008
-set	J48	22.5244
-set	J49	20.3617
-set	J50	18.1098
-set	J51	35.3145
-set	J52	31.5229
-set	J53	27.9199
-set	J54	24.5386
-set	J55	36.3732
-set	J56	58.3971
-set	J57	53.2032
-set	J58	48.151
-set	J59	43.1357
-set	J60	38.1799
-set	J61	38.1799
-set	J62	43.1357
-set	J63	48.151
-set	J64	53.2032
-set	J65	36.3732
-set	J66	23.3008
-set	J67	24.5386
-set	J68	27.9199
-set	J69	31.5229
-set	J70	35.3145
-#		Iy
-set	Iy1	0.7854
-set	Iy2	376.768
-set	Iy3	48.5569
-set	Iy4	142.9468
-set	Iy5	142.9468
-set	Iy6	353.469
-set	Iy7	250.341
-set	Iy8	491.98
-set	Iy9	405.899
-set	Iy10	335.667
-set	Iy11	240.225
-set	Iy12	251.422
-set	Iy13	223.611
-set	Iy14	198.655
-set	Iy15	240.225
-set	Iy16	198.655
-set	Iy17	223.6116
-set	Iy18	213.3676
-set	Iy19	202.7358
-set	Iy20	202.7358
-set	Iy21	213.3676
-set	Iy22	198.6562
-set	Iy23	237.028
-set	Iy24	225.6586
-set	Iy25	214.2892
-set	Iy26	202.9197
-set	Iy27	240.2257
-set	Iy28	251.422
-set	Iy29	249.1795
-set	Iy30	246.7571
-set	Iy31	244.145
-set	Iy32	241.3334
-set	Iy33	241.3334
-set	Iy34	244.145
-set	Iy35	246.7571
-set	Iy36	249.1795
-set	Iy37	240.2257
-set	Iy38	198.6562
-set	Iy39	202.9197
-set	Iy40	214.2892
-set	Iy41	225.6586
-set	Iy42	237.028
-set	Iy43	223.6116
-set	Iy44	216.4449
-set	Iy45	209.0809
-set	Iy46	201.5321
-set	Iy47	198.6562
-set	Iy48	201.5321
-set	Iy49	209.0809
-set	Iy50	216.4449
-set	Iy51	237.028
-set	Iy52	225.6586
-set	Iy53	214.2892
-set	Iy54	202.9197
-set	Iy55	240.2257
-set	Iy56	251.422
-set	Iy57	249.1795
-set	Iy58	246.7571
-set	Iy59	244.145
-set	Iy60	241.3334
-set	Iy61	241.3334
-set	Iy62	244.145
-set	Iy63	246.7571
-set	Iy64	249.1795
-set	Iy65	240.2257
-set	Iy66	198.6562
-set	Iy67	202.9197
-set	Iy68	214.2892
-set	Iy69	225.6586
-set	Iy70	237.028
-#		IZ
-set	Iz1	0.7854
-set	Iz2	376.768
-set	Iz3	5.1688
-set	Iz4	18.675
-set	Iz5	18.675
-set	Iz6	11.0804
-set	Iz7	7.9949
-set	Iz8	83.139
-set	Iz9	33.0121
-set	Iz10	18.6729
-set	Iz11	23.1356
-set	Iz12	47.9124
-set	Iz13	7.4325
-set	Iz14	13.085
-set	Iz15	23.1356
-set	Iz16	13.085
-set	Iz17	7.4327
-set	Iz18	9.705
-set	Iz19	12.1441
-set	Iz20	12.1441
-set	Iz21	9.705
-set	Iz22	13.0852
-set	Iz23	22.224
-set	Iz24	19.1775
-set	Iz25	16.4229
-set	Iz26	13.9457
-set	Iz27	23.1354
-set	Iz28	47.9125
-set	Iz29	41.392
-set	Iz30	35.3829
-set	Iz31	29.8812
-set	Iz32	24.8818
-set	Iz33	24.8818
-set	Iz34	29.8812
-set	Iz35	35.3829
-set	Iz36	41.392
-set	Iz37	23.1354
-set	Iz38	13.0852
-set	Iz39	13.9457
-set	Iz40	16.4229
-set	Iz41	19.1775
-set	Iz42	22.224
-set	Iz43	7.4327
-set	Iz44	9.0108
-set	Iz45	10.683
-set	Iz46	12.4219
-set	Iz47	13.0852
-set	Iz48	12.4219
-set	Iz49	10.683
-set	Iz50	9.0108
-set	Iz51	22.224
-set	Iz52	19.1775
-set	Iz53	16.4229
-set	Iz54	13.9457
-set	Iz55	23.1354
-set	Iz56	47.9125
-set	Iz57	41.392
-set	Iz58	35.3829
-set	Iz59	29.8812
-set	Iz60	24.8818
-set	Iz61	24.8818
-set	Iz62	29.8812
-set	Iz63	35.3829
-set	Iz64	41.392
-set	Iz65	23.1354
-set	Iz66	13.0852
-set	Iz67	13.9457
-set	Iz68	16.4229
-set	Iz69	19.1775
-set	Iz70	22.224
+#   IZ 
+set Iz1 [expr 0.7854*$m4]
+set Iz2 [expr 376.768*$m4]
+set Iz3 [expr 5.1688*$m4]
+set Iz4 [expr 18.675*$m4]
+set Iz5 [expr 18.675*$m4]
+set Iz6 [expr 11.0804*$m4]
+set Iz7 [expr 7.9949*$m4]
+set Iz8 [expr 83.139*$m4]
+set Iz9 [expr 33.0121*$m4]
+set Iz10 [expr 18.6729*$m4]
+set Iz11 [expr 23.1356*$m4]
+set Iz12 [expr 47.9124*$m4]
+set Iz13 [expr 7.4325*$m4]
+set Iz14 [expr 13.085*$m4]
+set Iz15 [expr 23.1356*$m4]
+set Iz16 [expr 13.085*$m4]
+set Iz17 [expr 7.4327*$m4]
+set Iz18 [expr 9.705*$m4]
+set Iz19 [expr 12.1441*$m4]
+set Iz20 [expr 12.1441*$m4]
+set Iz21 [expr 9.705*$m4]
+set Iz22 [expr 13.0852*$m4]
+set Iz23 [expr 22.224*$m4]
+set Iz24 [expr 19.1775*$m4]
+set Iz25 [expr 16.4229*$m4]
+set Iz26 [expr 13.9457*$m4]
+set Iz27 [expr 23.1354*$m4]
+set Iz28 [expr 47.9125*$m4]
+set Iz29 [expr 41.392*$m4]
+set Iz30 [expr 35.3829*$m4]
+set Iz31 [expr 29.8812*$m4]
+set Iz32 [expr 24.8818*$m4]
+set Iz33 [expr 24.8818*$m4]
+set Iz34 [expr 29.8812*$m4]
+set Iz35 [expr 35.3829*$m4]
+set Iz36 [expr 41.392*$m4]
+set Iz37 [expr 23.1354*$m4]
+set Iz38 [expr 13.0852*$m4]
+set Iz39 [expr 13.9457*$m4]
+set Iz40 [expr 16.4229*$m4]
+set Iz41 [expr 19.1775*$m4]
+set Iz42 [expr 22.224*$m4]
+set Iz43 [expr 7.4327*$m4]
+set Iz44 [expr 9.0108*$m4]
+set Iz45 [expr 10.683*$m4]
+set Iz46 [expr 12.4219*$m4]
+set Iz47 [expr 13.0852*$m4]
+set Iz48 [expr 12.4219*$m4]
+set Iz49 [expr 10.683*$m4]
+set Iz50 [expr 9.0108*$m4]
+set Iz51 [expr 22.224*$m4]
+set Iz52 [expr 19.1775*$m4]
+set Iz53 [expr 16.4229*$m4]
+set Iz54 [expr 13.9457*$m4]
+set Iz55 [expr 23.1354*$m4]
+set Iz56 [expr 47.9125*$m4]
+set Iz57 [expr 41.392*$m4]
+set Iz58 [expr 35.3829*$m4]
+set Iz59 [expr 29.8812*$m4]
+set Iz60 [expr 24.8818*$m4]
+set Iz61 [expr 24.8818*$m4]
+set Iz62 [expr 29.8812*$m4]
+set Iz63 [expr 35.3829*$m4]
+set Iz64 [expr 41.392*$m4]
+set Iz65 [expr 23.1354*$m4]
+set Iz66 [expr 13.0852*$m4]
+set Iz67 [expr 13.9457*$m4]
+set Iz68 [expr 16.4229*$m4]
+set Iz69 [expr 19.1775*$m4]
+set Iz70 [expr 22.224*$m4]
+

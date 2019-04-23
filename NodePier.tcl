@@ -1,9 +1,9 @@
 #½Úµã¶Õ1	NodeNumber	X	Y	Z			
-node	81	0	0	-2.79
-node	82	0	0	-3.79
-node	83	0	0	-4.99
-node	84	0	0	-6.61
-node	85	0	0	-9.11
+node 81	0	0	-2.79
+node 82	0	0	-3.79
+node 83	0	0	-4.99
+node 84	0	0	-6.61
+node 85	0	0	-9.11
 node	86	0	0	-11.61
 node	87	0	0	-14.11
 node	88	0	0	-16.61

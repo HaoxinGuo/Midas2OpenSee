@@ -128,7 +128,7 @@ uniaxialMaterial Steel01 4 56280 281400 0.03
 #uniaxialMaterial Elastic 1 30000000
 
 geomTransf Linear 238 0.000 0.000 1.000 
-geomTransf Linear 255 1.000 0.000 0.000 
+geomTransf Linear 255 0.000 1.000 0.000 
 geomTransf Linear 259 1.000 0.000 0.000 
 
 #element elasticBeamColumn $eleTag $iNode $jNode $A $E $G $J $Iy $Iz $transfTag <-mass $massDens> <-cMass>
