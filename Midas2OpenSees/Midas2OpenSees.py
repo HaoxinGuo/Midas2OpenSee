@@ -94,6 +94,9 @@ def getNodeEleSec(datas):
     nodeend =0
     Elestart = 0
     Eleend = 0
+    fixstart= 0
+    fixend = 0
+    fix = []
     a = -1;
     for data in datas:
         a = a + 1;    
@@ -109,6 +112,13 @@ def getNodeEleSec(datas):
         
         if data[0][:5] == ' SECT':
             SecNum[str(data[0][6:])] = a+1
+        
+        if data[0][:10] == '*CONSTRAIN':
+           # print(data[0][:10])
+            fixstart = a +2
+        if data[0][:12] == '*ELASTICLINK':
+            fixend = a - 2
+            print(fixend)
             
     for i in range(nodestart,nodeend):
         node = datas[i]
@@ -131,10 +141,17 @@ def getNodeEleSec(datas):
         #print(sec)
     for key in SecNum:
         Secnum.append(key)
-        
-    return nodes,elements,SecValue,Secnum
+        #print(key)
+    if fixstart == fixend:
+        for value in range(fixstart,fixend+1):
+            fix.append((str(datas[fixstart][0]).split(),datas[fixstart][1].split()))
+    else:
+        for value in range(fixstart,fixend):
+             fix.append((str(datas[fixstart][0]).split(),datas[fixstart][1].split()))
+    #print(str(datas[fixstart][0]).split())
+    return nodes,elements,SecValue,Secnum,fix
 
-def WriteFunc(nodes,elements,SecValue,Secnum):
+def WriteFunc(nodes,elements,SecValue,Secnum,fix):
     '''
     输入文件：nodes: 节点数据
             elements: 单元数据
@@ -150,16 +167,21 @@ def WriteFunc(nodes,elements,SecValue,Secnum):
         for lin in nodes:        
             lin2 = list(lin)
             f_out.write(lin2[0] + '\t' + str(lin2[1]) +  '\t' + str(lin2[2]) + '\t' + str(lin2[3]) + '\t' + str(lin2[4]) + '\n')
-    
+        for lin in fix:
+            lin2 = list(lin)
+            print(len(lin2[0]))
+            if lin2[1] == ['111111']:
+                for j in range(len(lin2[0])):
+                    f_out.write('fix ' + lin2[0][j] + ' 1 1 1 1 1 1' + '\n') 
     
     
     with  open('Section.tcl', 'w') as f_out:
+        f_out.write('set ' + 'E1' + ' = ' + str(E1) + '\n')
+        f_out.write('set ' + 'G1' + ' = ' + str(G1) + '\n')
         for lin,i in zip(SecValue,Secnum):        
             lin2 = list(lin)
             #print('set ' + 'A'+i.lstrip() + ' = ' + str(lin2[0]).lstrip())
             #f_out.write('$A'+i.lstrip(),lin2[0] + '\t' + str(lin2[1]) +  '\t' + str(lin2[2]) + '\t' + str(lin2[3]) + '\t' + str(lin2[4]) + '\n')
-            f_out.write('set ' + 'E1' + ' = ' + str(E1) + '\n')
-            f_out.write('set ' + 'G1' + ' = ' + str(G1) + '\n')
             f_out.write('set ' + 'A'+i.lstrip() + ' = ' + str(lin2[0]).lstrip()+ '\n') 
             f_out.write('set ' + 'J'+i.lstrip() + ' = ' + str(lin2[3]).lstrip() + '\n')
             f_out.write('set ' + 'Iy'+i.lstrip() + ' = ' + str(lin2[5]).lstrip())
@@ -193,9 +215,10 @@ datas = []
 with open(tclfile) as f:
     for line in f:
         datas.append(line.split(','))
+print(datas[4471][0][:12])
 
-nodes,elements,SecValue,Secnum = getNodeEleSec(datas)  
-WriteFunc(nodes,elements,SecValue,Secnum)
+nodes,elements,SecValue,Secnum,fix = getNodeEleSec(datas)  
+WriteFunc(nodes,elements,SecValue,Secnum,fix)
 
   
 
