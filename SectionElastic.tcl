@@ -1,5 +1,10 @@
 # 定义截面信息	截面面积代号		面积	
 # 定义截面信息	截面面积代号		面积	
+set A0  [expr 1.0E4*$m2]
+set Iy0 [expr 1.0E8*$m4]
+set Iz0 [expr 1.0E8*$m4]
+set J0  [expr 2.0E8*$m4]
+
 set A1 [expr 3.1416*$m2]
 set A2 [expr 67.24*$m2]
 set A3 [expr 13.7953*$m2]
